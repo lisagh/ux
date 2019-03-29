@@ -3,6 +3,9 @@
 .blockquote p{
   color: #818182;
 }
+.badge-dark{
+  margin-right:5px;
+}
 
 figcaption {
   font-size: .9rem;
@@ -19,6 +22,9 @@ figcaption {
 }
 .info h6 {
   margin-bottom:5px;
+}
+.desk{
+  padding-left:20px;
 }
 ul li { font-family: "Montserrat", sans-serif; }
 .hovereffect {
@@ -132,9 +138,7 @@ transition-delay:.2s;
 .block .gallery img{
   padding:10px 0;
 }
-.starter {
-  padding-top:120px;
-}
+
 .starter h2{
   font-family: Work Sans;
   font-weight: 1000;
@@ -202,18 +206,13 @@ transition-delay:.2s;
 }
 
 
-#first {
-  padding-top:60px;
-  height: 100vh;
-  position:  relative;
-}
 #first h1{
-  font-family: Open Sans;
+  font-family: Montserrat;
   font-weight: 1000;
-  font-size: 5rem;
+  font-size: 3.5rem;
+  font-kerning: 0.5;
 }
 #first p {
-  /* font-family: Tahoma!important; */
   margin:  0;
 }
 .client p {
@@ -411,12 +410,12 @@ body {
 }
 
 p {
-  font-family: "Montserrat", sans-serif!important;
   font-weight: 400;
   margin: 20px 0 20px 0;
   color:  #000;
   line-height: 1.8rem;
   font-size:1.2rem;
+  font-family: Raleway;
 }
 h5{
   font-family: "lato";
@@ -464,7 +463,7 @@ h1, h2, h3, h4, h6 {
 #header {
   padding: 20px 0;
   height: 72px;
-  position: fixed;
+/*   position: fixed; */
   left: 0;
   top: 0;
   right: 0;
@@ -515,10 +514,10 @@ h1, h2, h3, h4, h6 {
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
-  background-color: #070604ab;
+/*   background-color: #070604ab; */
 }
 #header.header-fixed a {
-  color:#fff!important;
+/*   color:#fff!important; */
 }
 #header.header-fixed img {
   height:40px!important;
@@ -660,9 +659,11 @@ h1, h2, h3, h4, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
-  float:  right;
+  float: left;
 }
-
+.menu-active{
+  font-weight:bold;
+}
 .nav-menu ul {
   position: absolute;
   display: none;
@@ -694,7 +695,23 @@ h1, h2, h3, h4, h6 {
 .nav-menu ul li {
   min-width: 180px;
 }
-
+.page-item.active .page-link{
+  background-color:#fff;
+  color: #dc3545;
+  border-color:#fff;
+}
+.page-item .page-link{
+  border:0;
+  color: #dc3545;
+  background-color: transparent;
+}
+.page-item.disabled .page-link {
+  background-color:transparent!important;
+}
+.pagination {
+ margin-bottom: 0px!important; 
+ padding-bottom: 1rem;
+}
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
@@ -734,8 +751,8 @@ h1, h2, h3, h4, h6 {
   text-decoration: none;
   display: inline-block;
   color: #050505;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: Raleway, sans-serif;
+  /* font-weight: 400; */
   font-size: 1rem;
   outline: none;
 }
