@@ -211,6 +211,7 @@ transition-delay:.2s;
   font-weight: 1000;
   font-size: 3.5rem;
   font-kerning: 0.5;
+  line-height: 1.0;
 }
 #first p {
   margin:  0;
