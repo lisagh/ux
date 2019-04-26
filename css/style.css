@@ -205,11 +205,32 @@ transition-delay:.2s;
   transform: translateX(-50%) translateY(-50%);
 }
 
+#first {
+  height: 90vh;
+    /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -moz-box-align : center;
+  -ms-flex-align : center;
+  align-items : center;
+}
+@media  (max-device-width: 768px) and (orientation: landscape) {
+  #first{
+    height: 60vh;
+  }
 
+}
 #first h1{
   font-family: Montserrat;
-  font-weight: 1000;
-  font-size: 3.5rem;
+  /* font-weight: 1000; */
+  /* font-size: 2.5rem; */
   font-kerning: 0.5;
   line-height: 1.0;
 }
@@ -219,6 +240,60 @@ transition-delay:.2s;
 .client p {
   /* font-family: Tahoma!important; */
   margin:  0;
+}
+
+/*mouse*/
+.mouse-icon {
+  position: absolute;
+  border: 2px solid #2f2f2f;
+  background: #ffffff;
+  opacity: 0.8;
+  border-radius: 13px;
+  height: 40px;
+  width: 30px;
+  margin: 0 auto;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 100;
+}
+
+.mouse-icon .scroll {
+  -webkit-animation-name: scrolling;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: scrolling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.mouse-icon .scroll {
+  position: relative;
+  border-radius: 10px;
+  background: #2f2f2f;
+  width: 4px;
+  height: 8px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes scrolling  {
+  0%   { top:2px;  opacity: 0;}
+  30%  { top:8px; opacity: 1;}
+  100% { top:16px; opacity: 0;}
+}
+
+@keyframes scrolling  {
+  0%   { top:2px;  opacity: 0;}
+  30%  { top:8px; opacity: 1;}
+  100% { top:16px; opacity: 0;}
 }
 #second h1{
   font-family: Work Sans;
